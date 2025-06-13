@@ -1,5 +1,5 @@
 body {
-    font-family: ibm-plex-sans;
+    font-family: ibm-plex-sans, sans-serif;
     padding: 1rem;
     /* color.adobe.com RGB hex Farbe suchen */
     color: #000000;
@@ -9,15 +9,23 @@ body {
 }
 
 /* alles ausblenden was man nicht sehen soll */
-head, nav {
+header {
     display: none
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 400;
+}
+
+h2 {
+    font-size: var(--font-size-2xl)
 }
 
 p, h1, h2, h3, h4, h5, dd, li, figure {
     margin-bottom: 1rem;
+}
+
+p, dd, li, figcaption {
+    hyphens: auto;
 }
