@@ -1,0 +1,23 @@
+body {
+    font-family: ibm-plex-sans;
+    padding: 1rem;
+    /* color.adobe.com RGB hex Farbe suchen */
+    color: #000000;
+    background-color: #ffffff;
+    line-height: 140%;
+    font-weight: 300;
+}
+
+/* alles ausblenden was man nicht sehen soll */
+head, nav {
+    display: none
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+p, h1, h2, h3, h4, h5, dd, li, figure {
+    margin-bottom: 1rem;
+}

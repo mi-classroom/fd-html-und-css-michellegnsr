@@ -1,0 +1,50 @@
+/* Infobox ------------------------------------ */
+
+.infobox {
+
+    background-color: #efefef;
+    border-left: solid 0.2rem #d4af37;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    /* Can I use Tool zum checken der Brauchbarkeit von Features */
+    /* CSS nesting -> h3 in infobox verschachtelt */
+
+    h3{
+        font-weight: bold;
+    }
+
+    /* alternative Implementierung, greift NUR auf die erste h3 in der Infobox */
+    /* h3:firstchild{
+        font-weight: bold;
+    } */
+
+}
+
+/* Bildunterschrift --------------------------------- */
+
+.bildunterschrift {
+
+    img {
+
+        /* nimmt sich so viel Platz wie da ist */
+        width: 100%;
+        /* Bild jetzt nicht mehr inline Element = Abstand zwischen Bild und Caption geht weg */
+        display: block;
+    }
+
+    figcaption {
+
+        background-color: #efefef;
+        padding: 0.5rem;
+        font-size: 0.9rem;
+        line-height: 130%;
+    }
+}
+
+
+/* Ab ... soll ... passieren */
+/* Ab 500 px soll ... passieren */
+@media (min-width: 500px) {
+    
+}
