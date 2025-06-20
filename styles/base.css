@@ -9,17 +9,25 @@ body {
 }
 
 /* alles ausblenden was man nicht sehen soll */
-header {
+/* header {
     display: none
-}
+} */
 
 h1 {
     font-size: 32px;
     font-weight: 400;
+    margin-bottom: var(--spacing-3xl);
+    line-height: var(--line-height-tight);
 }
 
 h2 {
-    font-size: var(--font-size-2xl)
+    font-size: var(--font-size-2xl);
+    margin-top: var(--spacing-3xl);
+}
+
+img {
+    width: 100%;
+    display: block;
 }
 
 p, h1, h2, h3, h4, h5, dd, li, figure {
@@ -28,4 +36,8 @@ p, h1, h2, h3, h4, h5, dd, li, figure {
 
 p, dd, li, figcaption {
     hyphens: auto;
+}
+
+strong {
+    font-weight: var(--font-weight-bold);
 }

@@ -15,13 +15,28 @@
 </head>
 
 <body>
-    <header>
-        <a href="/index.html"><img src="/assets/images/cda-logo.svg" alt="CDA Logo"></a>
-        <nav>
-            <ul>
+    <header class="header">
+        <div class="header-container">
+            <a class="header-logo" href="../index.html">
+                <img src="../assets/images/cda-logo.svg" alt="Cranach Digital Archive Logo">
+            </a>
+            <div class="header-buttons">
+                <button class="header-button" data-js-search-open>
+                    <span class="icon">search</span>
+                </button>
+                <button class="header-button" data-js-main-menu-open>
+                    <span data-js-main-menu-icon class="icon">menu</span>
+                </button>
+            </div>
+        </div>
+        <nav class="header-overlay header-nav" aria-label="Hauptnavigation" data-js-main-menu-target>
+            <button class="header-button header-overlay-close-button" data-js-main-menu-close>
+                <span class="icon">close</span>
+            </button>
+            <ul class="header-nav-list">
                 <li>
                     Archiv
-                    <ul>
+                    <ul class="header-nav-sublist">
                         <li>Alle Werke</li>
                         <li>Gemälde</li>
                         <li>Archivalien</li>
@@ -30,9 +45,9 @@
                 </li>
                 <li>
                     Personen
-                    <ul>
+                    <ul class="header-nav-sublist">
                         <li><a href="lucas-cranach.html">Lucas Cranach</a></li>
-                        <li>Martin Luther</li>
+                        <li class="red-text important-text">Martin Luther</li>
                         <li>Über uns</li>
                         <li>Partner</li>
                     </ul>
@@ -47,7 +62,7 @@
         <h1></span>Biografien von Lucas Cranach und seinen Söhnen</h1>
         <h2>Inhalt</h2>
         <aside>
-            <nav class="onpagenavigation">
+            <nav class="onpagenavigation" aria-label="Inhaltsverzeichnis">
                 <ul>
                     <li><a href="#lucas-cranach-der-aeltere">Lucas Cranach der Ältere</a></li>
                     <li><a href="#hans-cranach">Hans Cranach</a></li>
@@ -124,7 +139,7 @@
                 Werkstattsignatur: Die Schlange wurde nicht mehr mit aufrecht stehenden sondern mit liegenden Flügeln
                 dargestellt.</p>
 
-            <figure>
+            <figure class="bildunterschrift">
                 <img src="/assets/images/lucas-cranach-2.jpg" alt="Lucas Cranach 2">
                 <figcaption>Lucas Cranach der Ältere, Selbstbildnis, 1531. Holztafel. Schloss Stolzenfels. Detail
                 </figcaption>
@@ -223,7 +238,7 @@
         <article>
             <h2 id="hans-cranach">Hans Cranach</h2>
 
-            <figure>
+            <figure class="bildunterschrift">
                 <img src="/assets/images/hans-cranach.jpg" alt="Hans Cranach">
                 <figcaption>
                     <h3>Kurzüberblick</h3>
@@ -272,7 +287,7 @@
         <article>
             <h2 id="lucas-cranach-der-juengere">Lucas Cranach der Jüngere</h2>
 
-            <figure>
+            <figure class="bildunterschrift">
                 <img src="/assets/images/lucas-cranach-der-juengere.jpg" alt="Lucas Cranach der Jüngere">
                 <figcaption>
                     <h3>Kurzüberblick</h3>

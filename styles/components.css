@@ -10,7 +10,7 @@
     /* Can I use Tool zum checken der Brauchbarkeit von Features */
     /* CSS nesting -> h3 in infobox verschachtelt */
 
-    h3{
+    h3 {
         font-weight: bold;
     }
 
@@ -62,7 +62,7 @@
         padding: var(--spacing-2xs);
 
         margin: 0;
-    
+
         border-left: var(--border-radius-m) solid var(--color-border);
         padding-left: var(--spacing-s);
 
@@ -72,8 +72,27 @@
             opacity: 0.6;
         }
 
-        &:hover {
+        &:hover {
             border-left-color: var(--color-secondary);
+
+            a {
+                opacity: 1;
+            }
         }
+    }
+}
+
+/* Button
+############################################################################# */
+.button {
+    background-color: var(--color-primary-default);
+    padding: 0 var(--spacing-xs);
+    border: none;
+    color: #fff;
+    font-size: var(--font-size-l);
+    height: 38px;
+
+    &:active {
+        background-color: var(--color-primary-400);
     }
 }
