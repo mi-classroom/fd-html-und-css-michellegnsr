@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="/styles/fonts.css">
 <link rel="stylesheet" href="/styles/icons.css">
 <link rel="stylesheet" href="/styles/header.css">
+<script defer src="/scripts/main.js"></script>
 
 <head>
     <meta charset="UTF-8">
@@ -59,20 +60,17 @@
         </nav>
     </header>
 
-    <main>
+    <main data-js-page-navigation-content>
         <h1></span>Biografien von Lucas Cranach und seinen Söhnen</h1>
         <h2>Inhalt</h2>
         <aside>
             <nav class="onpagenavigation" aria-label="Inhaltsverzeichnis">
-                <ul>
-                    <li><a href="#lucas-cranach-der-aeltere">Lucas Cranach der Ältere</a></li>
-                    <li><a href="#hans-cranach">Hans Cranach</a></li>
-                    <li><a href="#lucas-cranach-der-juengere">Lucas Cranach der Jüngere</a></li>
+                <ul data-js-page-navigation-menu>
                 </ul>
             </nav>
         </aside>
-        <article>
-            <h2 id="lucas-cranach-der-aeltere">Lucas Cranach der Ältere</h2>
+        <section>
+            <h2>Lucas Cranach der Ältere</h2>
 
             <blockquote class="infobox">
                 <h3>Kurzüberblick</h3>
@@ -234,10 +232,10 @@
                 <dt>1553</dt>
                 <dd>Lucas Cranach der Ältere stirbt am 16. Oktober in Weimar</dd>
             </dl>
-        </article>
+        </section>
 
-        <article>
-            <h2 id="hans-cranach">Hans Cranach</h2>
+        <section>
+            <h2>Hans Cranach</h2>
 
             <figure class="bildunterschrift">
                 <img src="/assets/images/hans-cranach.jpg" alt="Hans Cranach">
@@ -283,10 +281,10 @@
                 <dd>verstorben in Bologna</dd>
 
             </dl>
-        </article>
+        </section>
 
-        <article>
-            <h2 id="lucas-cranach-der-juengere">Lucas Cranach der Jüngere</h2>
+        <section>
+            <h2>Lucas Cranach der Jüngere</h2>
 
             <figure class="bildunterschrift">
                 <img src="/assets/images/lucas-cranach-der-juengere.jpg" alt="Lucas Cranach der Jüngere">
@@ -300,7 +298,7 @@
                     </ul>
                 </figcaption>
             </figure>
-        </article>
+        </section>
 
     </main>
 
@@ -328,7 +326,6 @@
         <p>Zum Kontaktformular</p>
         <p>&copy; Stiftung Museum Kunstpalast, Düsseldorf / Technische Hochschule Köln, 2025</p>
     </footer>
-    <script src="/scripts/main.js"></script>
 </body>
 
 </html>
