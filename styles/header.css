@@ -3,7 +3,7 @@ body:has(.header-overlay.is-active) {
   }
   
   .header {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     .header-container {
       display: flex;
       justify-content: space-between;
