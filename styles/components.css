@@ -53,7 +53,7 @@
 .onpagenavigation {
 
     ul {
-        margin-top: var(--spacing-m);
+        margin-top: var(--spacing-l);
         margin-bottom: var(--spacing-xl);
     }
 
@@ -63,7 +63,7 @@
 
         margin: 0;
 
-        border-left: var(--border-radius-m) solid var(--color-border);
+        border-left: var(--border-width-m) solid var(--color-background-200);
         padding-left: var(--spacing-s);
 
         a {
@@ -73,7 +73,7 @@
         }
 
         &:hover {
-            border-left-color: var(--color-secondary);
+            border-left-color: var(--color-primary-default);
 
             a {
                 opacity: 1;
