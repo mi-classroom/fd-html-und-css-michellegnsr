@@ -1,5 +1,5 @@
 
-
+// -------------------------- Menu --------------------------
 /* Menü soll sich öffnen */
 const menuOpenButton = document.querySelector('[data-js-main-menu-open]');
 const menuOverlay = document.querySelector('[data-js-main-menu-target]');
@@ -13,14 +13,25 @@ menuOpenButton.addEventListener('click', function () {
 //     console.log('Menu opened');
 // }
 
-/* Search soll sich öffnen */
-const searchOpenButton = document.querySelector('[data-js-main-search-open]');
-
 /* Menü soll sich schließen */
 const menuCloseButton = document.querySelector('[data-js-main-menu-close]');
 
 menuCloseButton.addEventListener('click', function () {
     menuOverlay.classList.remove('is-active');
+});
+
+// -------------------------- Suche --------------------------
+// Suche soll sich öffnen
+const searchOpenButton = document.querySelector('[data-js-search-open]');
+const searchOverlay = document.querySelector('[data-js-search-target]');
+searchOpenButton.addEventListener('click', function () {
+    searchOverlay.classList.add('is-active');
+});
+
+// Suche soll sich schließen
+const searchCloseButton = document.querySelector('[data-js-search-close]');
+searchCloseButton.addEventListener('click', function () {
+    searchOverlay.classList.remove('is-active');
 });
 
 

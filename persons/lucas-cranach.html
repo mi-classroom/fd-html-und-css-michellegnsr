@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="/styles/fonts.css">
 <link rel="stylesheet" href="/styles/icons.css">
 <link rel="stylesheet" href="/styles/header.css">
+<link rel="stylesheet" href="/styles/search.css">
 <script defer src="/scripts/main.js"></script>
 
 <head>
@@ -57,6 +58,17 @@
                 <li>Forschung</li>
                 <li>Aktuelles</li>
             </ul>
+        </nav>
+        <nav class="header-overlay header-search" aria-label="Suche" data-js-search-target>
+            <button class="header-button header-overlay-close-button" data-js-search-close>
+                <span class="icon">close</span>
+            </button>
+            <form class="header-search-form" action="/suche.html" method="get">
+                <input type="text" name="query" placeholder="Suche..." required>
+                <button type="submit" class="header-search-submit">
+                    <span class="icon">search</span>
+                </button>
+            </form>
         </nav>
     </header>
 
