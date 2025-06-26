@@ -34,6 +34,15 @@ searchCloseButton.addEventListener('click', function () {
     searchOverlay.classList.remove('is-active');
 });
 
+// Suchwort soll in der Konsole angezeigt werden sobald man auf submit drückt
+const searchForm = document.querySelector('[data-js-search-form]');
+searchForm.addEventListener('submit', function (event) {
+    event.preventDefault(); // verhindert das Neuladen der Seite
+    const searchInput = document.querySelector('[data-js-search-input]');
+    console.log(searchInput.value);
+    searchOverlay.classList.remove('is-active'); // schließt die Suche nach dem Absenden
+});
+
 
 /* Navigation dynamisch generieren */
 const pageNavigation = document.querySelector('[data-js-page-navigation-menu]');
