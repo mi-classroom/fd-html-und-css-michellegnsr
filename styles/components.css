@@ -1,13 +1,13 @@
 /* Infobox ------------------------------------ */
 
 .infobox {
-
-    background-color: #efefef;
-    border-left: solid 0.2rem #d4af37;
     padding: 1rem;
+    border-left: solid 0.2rem #d4af37;
     margin-bottom: 1rem;
+    background-color: #efefef;
 
     /* Can I use Tool zum checken der Brauchbarkeit von Features */
+
     /* CSS nesting -> h3 in infobox verschachtelt */
 
     h3 {
@@ -15,6 +15,7 @@
     }
 
     /* alternative Implementierung, greift NUR auf die erste h3 in der Infobox */
+
     /* h3:firstchild{
         font-weight: bold;
     } */
@@ -24,19 +25,17 @@
 /* Bildunterschrift --------------------------------- */
 
 .bildunterschrift {
-
     img {
+        /* Bild jetzt nicht mehr inline Element = Abstand zwischen Bild und Caption geht weg */
+        display: block;
 
         /* nimmt sich so viel Platz wie da ist */
         width: 100%;
-        /* Bild jetzt nicht mehr inline Element = Abstand zwischen Bild und Caption geht weg */
-        display: block;
     }
 
     figcaption {
-
-        background-color: #efefef;
         padding: 0.5rem;
+        background-color: #efefef;
         font-size: 0.9rem;
         line-height: 130%;
     }
@@ -44,23 +43,23 @@
 
 .bildunterschrift-horizontal {
     img {
+        /* Bild jetzt nicht mehr inline Element = Abstand zwischen Bild und Caption geht weg */
+        display: block;
 
         /* nimmt sich so viel Platz wie da ist */
         width: 100%;
-        /* Bild jetzt nicht mehr inline Element = Abstand zwischen Bild und Caption geht weg */
-        display: block;
         height: 100%;
         object-fit: cover;
+
         /* Bild füllt den Container aus */
     }
 
     figcaption {
-
-        background-color: #efefef;
         padding: 0.5rem;
+        border-left: solid 0.2rem #d4af37;
+        background-color: #efefef;
         font-size: 0.9rem;
         line-height: 130%;
-        border-left: solid 0.2rem #d4af37;
 
         li {
             margin-left: 2rem;
@@ -72,32 +71,29 @@
 
 
 /* Ab ... soll ... passieren */
+
 /* Ab 500 px soll ... passieren */
-@media (min-width: 500px) {}
+@media (width >= 500px) {}
 
 
 /* OPN --------------------------------------------- */
 
 .onpagenavigation {
-
     ul {
         margin-top: var(--spacing-l);
         margin-bottom: var(--spacing-xl);
     }
 
     li {
-
         padding: var(--spacing-2xs);
-
-        margin: 0;
-
-        border-left: var(--border-width-m) solid var(--color-background-200);
         padding-left: var(--spacing-s);
+        border-left: var(--border-width-m) solid var(--color-background-200);
+        margin: 0;
 
         a {
             color: var(--color-text);
-            text-decoration: none;
             opacity: 0.6;
+            text-decoration: none;
         }
 
         &:hover {
@@ -113,12 +109,12 @@
 /* Button
 ############################################################################# */
 .button {
-    background-color: var(--color-primary-default);
+    height: 38px;
     padding: 0 var(--spacing-xs);
     border: none;
+    background-color: var(--color-primary-default);
     color: #fff;
     font-size: var(--font-size-l);
-    height: 38px;
 
     &:active {
         background-color: var(--color-primary-400);

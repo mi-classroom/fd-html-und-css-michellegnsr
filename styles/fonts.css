@@ -1,15 +1,15 @@
 @font-face {
     font-family: imb-plex-sans;
-    src: url("/fonts/IBM_Plex_Sans/static/IBMPlexSans-Light.ttf") format("truetype");
-    font-weight: 300;
     font-style: normal;
+    font-weight: 300;
+    src: url("/fonts/IBM_Plex_Sans/static/IBMPlexSans-Light.ttf") format("truetype");
 }
 
 @font-face {
     font-family: ibm-plex-sans;
-    src: url("/fonts/IBM_Plex_Sans/static/IBMPlexSans-Regular.ttf") format("truetype");
-    font-weight: 400;
     font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/IBM_Plex_Sans/static/IBMPlexSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -17,7 +17,6 @@
     font-family: material-icons;
     font-style: normal;
     font-weight: 400;
-  
     src: local('Material Icons'),
       local('MaterialIcons-Regular'),
       url('/fonts/MaterialIcons/MaterialIcons-Regular.woff2') format('woff2'),
