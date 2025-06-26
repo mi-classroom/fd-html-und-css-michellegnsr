@@ -75,6 +75,42 @@ dl {
     }
 }
 
+footer {
+    display: grid;
+    margin: 0 auto;
+    background-color: #222;
+
+    .footer-logo {
+        margin-top: 3rem;
+        margin-left: 2rem;
+    }
+
+    .footer-nav{
+        margin-top: 3rem;
+        margin-left: 2rem;
+        font-weight: var(--font-weight-light);
+    }
+
+    .footer-absatz {
+        margin-bottom: 4rem;
+    }
+
+    h4 {
+        color: #fff;
+        font-size: var(--font-size-m);
+        font-weight: var(--font-weight-bold);
+    }
+
+    p {
+        color: #d3d3d3;
+    }
+
+    a {
+        color: #d3d3d3;
+        text-decoration: none;
+    }
+}
+
 /* Responsive Design --------------------------------------- */
 
 /* Mit Media Query */
@@ -134,5 +170,21 @@ dl {
         display: grid;
         gap: 20px;
         grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 33.3% 1fr;
+
+        .footer-nav{
+            display: grid;
+            margin-top: 3rem;
+            margin-right: 2rem;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .footer-absatz {
+            margin-right: 2rem;
+        }
     }
 }
