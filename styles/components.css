@@ -42,6 +42,34 @@
     }
 }
 
+.bildunterschrift-horizontal {
+    img {
+
+        /* nimmt sich so viel Platz wie da ist */
+        width: 100%;
+        /* Bild jetzt nicht mehr inline Element = Abstand zwischen Bild und Caption geht weg */
+        display: block;
+        height: 100%;
+        object-fit: cover;
+        /* Bild füllt den Container aus */
+    }
+
+    figcaption {
+
+        background-color: #efefef;
+        padding: 0.5rem;
+        font-size: 0.9rem;
+        line-height: 130%;
+        border-left: solid 0.2rem #d4af37;
+
+        li {
+            margin-left: 2rem;
+            list-style: disc;
+        }
+    }
+}
+
+
 
 /* Ab ... soll ... passieren */
 /* Ab 500 px soll ... passieren */
